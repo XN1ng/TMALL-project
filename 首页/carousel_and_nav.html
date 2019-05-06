@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>轮播+导航栏</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.6/css/bootstrap.min.css">
+        <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://cdn.staticfile.org/popper.js/1.12.5/umd/popper.min.js"></script>
+        <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.6/js/bootstrap.min.js"></script>
+        
+        <style type="text/css">
+        	body{
+			    font-size:12px;
+			    font-family:Arial;
+			}
+            div.item img {
+                width: 100%;
+            }
+
+            div#carousel-outer {
+                width: 1000px;
+                margin: 20px auto;
+            }
+            div.headBar {
+            	background-color: rgb(221, 39, 39);
+            }
+            div.headBar div.head {
+            	display: inline-block;
+            	width: 200px;
+            	height: 36px;
+            	line-height: 36px;
+            	font-weight: bold; 
+            	font-size: 16px;
+            	margin:0 20px; 
+            	color: white;
+            	background-color: #C60A0A;
+            	padding-left: 10px;
+            }
+            div.headBar div.rightMenu {
+            	display: inline-block;
+            }
+            div.headBar div.rightMenu img {
+            	height: 30px;
+            }
+            div.headBar div.rightMenu span {
+            	margin-right: 40px;
+            }
+            div.headBar div.rightMenu span a {
+            	color: white;
+            	font-size: 16px;
+            	text-decoration: none;
+            }
+            div.headBar div.rightMenu img#tmall {
+            	display: inline;
+            	width: 50%;
+            }
+            div#headBar_fill {
+            	position: relative;
+            	width: 100%;
+            	height: 36px;
+            	background-color: rgb(221, 39, 39);
+            	top: -480px;
+            	z-index: -1;
+            }
+            div#carousel_fill {
+            	position: relative;
+            	width: 100%;
+            	height: 424px;
+            	background-color: rgb(232, 232, 232);
+            	top: -480px;
+            	z-index: -1;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div id="carousel-outer" class="carousel slide" data-ride="carousel">
+        	<div class="headBar">
+        		<div class="head">
+        			<span class="glyphicon glyphicon-th-list"></span>
+			        <span>商品分类</span>
+        		</div>
+        		<div class="rightMenu">
+        			<span><a href="#"><img src="http://how2j.cn/tmall/img/site/chaoshi.png"></a></span>
+			        <span><a href="#"><img src="http://how2j.cn/tmall/img/site/guoji.png"></a></span>
+	                <span><a href="#">平板电视</a></span>        
+	                <span><a href="#">马桶</a></span>        
+	                <span><a href="#">沙发</a></span>        
+	                <span><a href="#">电热水器</a></span> 
+        		</div>
+        	</div>
+
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+            </ol>
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                    <img src="http://how2j.cn/tmall/img/lunbo/1.jpg">
+                </div>
+                <div class="item">
+                    <img src="http://how2j.cn/tmall/img/lunbo/2.jpg">
+                </div>
+                <div class="item">
+                    <img src="http://how2j.cn/tmall/img/lunbo/3.jpg">
+                </div>
+                <div class="item">
+                    <img src="http://how2j.cn/tmall/img/lunbo/4.jpg">
+                </div>
+            </div>
+            
+        </div>
+        <!-- 轮播图颜色填充 -->
+        <!-- <div id="headBar_fill"></div>
+        <div id="carousel_fill"></div> -->
+        <!-- 轮播图颜色填充 -->
+    </body>
+</html>

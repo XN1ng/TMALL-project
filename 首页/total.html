@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>公共页面+轮播</title>
+        <title>公共页面+轮播+产品列表+登录界面</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.1.0/css/bootstrap.min.css">
@@ -359,6 +359,7 @@
                     $("div.categoryContent[cid="+cid_temp+"]").hide();
                 });
 
+                // 显示和隐藏猫耳朵
                 $("div.headBar div.rightMenu span").mouseover(function() {
                     var pos_left = $(this).position().left;
                     var width_menu = $(this).css("width");
@@ -371,6 +372,10 @@
                 });
                 $("div.headBar div.rightMenu span").mouseout(function() {
                     $("img.catEar").css("display", "none");
+                    // 由于使用了绝对定位，使用fadeOut会有偏移
+                });
+                $("footer a").click(function() {
+                    alert("纯前端实现，没有实际链接！");
                 });
             });
         </script>
@@ -384,7 +389,7 @@
                     天猫首页
                 </a>
                 <span>喵，欢迎来到天猫</span>
-                <a href="#">请登录</a>
+                <a href="../登录界面/login.html">请登录</a>
                 <a href="#">免费注册</a>
                 <span class="pull-right">
                     <a href="#">我的订单</a>
